@@ -40,9 +40,16 @@ bin/mower src/ressource/in.dat
 ## Package
 
 ```
+# Create docker image
 docker build -t mower:latest .
 
-docker run -ti -v src/ressource:/input mower:latest /usr/bin/mower /input/in.dat 
+# Run 
+docker run -ti -v "$(pwd)/src/ressource:/input" mower:latest /usr/bin/mower /input/.dat 
+
+# Test Error
+docker run -ti -v "$(pwd)/src/ressource:/input" mower:latest /usr/bin/mower /input/conflict.dat
+docker run -ti -v "$(pwd)/src/ressource:/input" mower:latest /usr/bin/mower /input/oofr.dat
+
 ```
 
 
