@@ -25,7 +25,7 @@ go run src/exo/main.go src/ressource/in.dat
 ## Run Test 
 
 ```
-go test -i exo/orientation exo/mower exo/parser
+go test exo/orientation exo/mower exo/parser
 ```
 
 ## Build 
