@@ -1,4 +1,4 @@
-# Mower exo with golang
+# Mower exo with golang - Multithread version
 
 * author : thomas rayez
 * date : 14/07/2019
