@@ -44,7 +44,7 @@ bin/mower src/ressource/in.dat
 docker build -t mower:latest .
 
 # Run 
-docker run -ti -v "$(pwd)/src/ressource:/input" mower:latest /usr/bin/mower /input.dat 
+docker run -ti -v "$(pwd)/src/ressource:/input" mower:latest /usr/bin/mower /input/in.dat 
 
 # Test Error
 docker run -ti -v "$(pwd)/src/ressource:/input" mower:latest /usr/bin/mower /input/conflict.dat
